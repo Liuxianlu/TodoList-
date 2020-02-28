@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TodoList</title>
+	<!-- 在线图标库 -->
+	<script type="text/javascript" src="https://kit.fontawesome.com/282f8a23c3.js"></script>
+	<link rel="stylesheet" href="css/common.css" />
+	<link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+	<!-- 外层容器 -->
+	<div class="wrap" data-config='{
+    "plusBtn": "plus-sign",
+    "inputArea": "input-wrap",
+    "addBtn": "btn-val",
+    "list": "list",
+    "itemClass": "item"
+	}'>
+
+		<!-- 导航栏 -->
+		<div class="list-hd">
+			<h2 class="hd-title">TodoList</h2>
+			<a href="javascript:;" class="plus-sign fa fa-plus"></a>
+		</div>
+
+		<!-- 输入框容器 -->
+		<div class="input-wrap">
+			<div class="input-box">
+				<input class="content" type="text" />
+			</div>
+			<div class="btn-wrap">
+				<button class="btn-val">增加项目</button>
+			</div>
+		</div>
+    
+    <!-- 列表容器 -->
+		<div class="list-wrap">
+			<ul class="list"></ul>
+		</div>
+	</div>
+
+  <script type="text/javascript" src="js/utils.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
